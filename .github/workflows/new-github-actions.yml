@@ -1,0 +1,9 @@
+name: new-github-actions
+run-name: new github action, written by ${{ github.actor }}.
+on: [push]
+jobs:
+  check-bash-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: bash -v
